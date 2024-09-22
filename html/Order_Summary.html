@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>City Mall</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ====================================== css file ================================== -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+
+    <!--======================================  bootstrap css ============================  -->
+    <link rel="stylesheet" href="../assets/bootstrap5/css/bootstrap.min.css" />
+
+    <!--======================================== animate ================================= -->
+    <link rel="stylesheet" href="../assets/animate/animate.min.css" />
+
+    <!--======================================= OwlCarousel2-2.3.4 ======================  -->
+    <link
+      rel="stylesheet"
+      href="../assets/OwlCarousel2-2.3.4/css/owl.carousel.min.css"
+    />
+
+    <!-- ===================================== fontawesome =============================== -->
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css" />
+
+    <!-- ===================================== bootstrap5 icon =============================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+
+     <!-- ==================================== navbar strat ====================================== -->
+
+     <nav class="navbar navbar-expand-lg">
+        <div class="container">
+         
+          <button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand fs-4" href="#">
+              logo
+             </a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">logo</h5>
+              <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 align-content-center">
+                <li class="nav-item mx-2">
+                  <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
+                </li>
+              
+  
+                <!-- =============================== dropdown ===================================== -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fs-5 mx-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      shop
+                      <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <ul>
+                          <li><a class="dropdown-item fs-5" href="#">Men</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">T-Shirts</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Casual Shirts</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Formal Shirts</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Jackets</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Blazers & Coats</a></li>
+                          <li><a class="dropdown-item fw-normal fs-4" href="#">Indian & Festive Wear</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Kurtas & Kurta Sets</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Sherwanis</a></li>
+                      </ul>
+                      <ul>
+                          <li><a class="dropdown-item fs-5" href="#">Women</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Kurtas & Suits</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Sarees</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Ethnic Wear</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Lehenga Cholis</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Jackets</a></li>
+                          <li><a class="dropdown-item fw-normal fs-4" href="#">Western Wear</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Dresses</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Jumpsuits</a></li>
+                      </ul>
+                      <ul>
+                          <li><a class="dropdown-item fs-5" href="#">Footwear</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Flats</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Casual Shoes</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Heels</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Boots</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Sports Shoes & Floaters</a></li>
+                          <li><a class="dropdown-item fw-normal fs-4" href="#">Product Features</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">360 Product Viewer</a></li>
+                          <li><a class="dropdown-item fs-5" href="#">Product with Video</a></li>
+                      </ul>
+                  </div>
+              </li>
+  
+              <!-- =============================== end dropdown ================================= -->
+                <li class="nav-item mx-2">
+                  <a class="nav-link fs-5" href="#">Our story</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link fs-5" href="#">Blog</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link fs-5" href="#">contact us</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+          <div class="d-flex justify-content-end"> 
+              <div class="social">
+                  <a href="" class="fs-4 mx-2 text-black"><i class="fas fa-search"></i></a>
+                  <a href="" class="fs-4 mx-2 text-black"><i class="fas fa-heart"></i></a>
+                  <a href="" class="fs-4 mx-2 text-black" data-bs-toggle="modal" data-bs-target="#cartModal"><i class="fas fa-shopping-bag"></i></a>
+              </div>
+  
+              <div class="login mx-3">
+                  <button type="button" class="btn btn-dark rounded-2 ">login</button>
+              </div>
+          </div>
+        </div>
+      </nav>
+  
+      <!-- ==================================== navbar end ======================================== -->
+       
+<div class="container my-5">
+    <div class="row">
+        <!-- Left: Review Section -->
+        <div class="col-lg-8">
+            <h2>Review Your Order</h2>
+            <div class="d-flex align-items-center mb-4">
+                <div class="step-icon">
+                    <i class="bi bi-house-door"></i>
+                </div>
+                <div class="px-2">Address</div>
+                <hr class="flex-grow-1 mx-2">
+                <div class="step-icon">
+                    <i class="bi bi-credit-card"></i>
+                </div>
+                <div class="px-2">Payment Method</div>
+                <hr class="flex-grow-1 mx-2">
+                <div class="step-icon">
+                    <i class="bi bi-check-circle"></i>
+                </div>
+                <div class="px-2">Review</div>
+            </div>
+
+            <p class="fw-bold">Estimated delivery: 22 Feb 2022</p>
+
+            <ul class="list-group">
+                <!-- Product 1 -->
+                <li class="list-group-item">
+                    <div class="d-flex">
+                        <img src="https://via.placeholder.com/150x150" alt="Product 1" width="50" height="50">
+                        <div class="ms-3">
+                            <p>Girls Pink Moana Printed Dress</p>
+                            <span>$80.00</span>
+                            <p>Size: S</p>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Product 2 -->
+                <li class="list-group-item">
+                    <div class="d-flex">
+                        <img src="https://via.placeholder.com/150x150" alt="Product 2" width="50" height="50">
+                        <div class="ms-3">
+                            <p>Women Textured Handheld Bag</p>
+                            <span>$80.00</span>
+                            <p>Size: Regular</p>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Product 3 -->
+                <li class="list-group-item">
+                    <div class="d-flex">
+                        <img src="https://via.placeholder.com/150x150" alt="Product 3" width="50" height="50">
+                        <div class="ms-3">
+                            <p>Tailored Cotton Casual Shirt</p>
+                            <span>$40.00</span>
+                            <p>Size: M</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <p class="fw-bold mt-4">Shipping Address</p>
+            <p>Robert Fox<br>4517 Washington Ave, Manchester, Kentucky 39495</p>
+
+            <p class="fw-bold mt-4">Payment Method</p>
+            <p>Debit Card (.... .... .... 89)</p>
+        </div>
+
+        <!-- Right: Summary Section -->
+        <div class="col-lg-4">
+            <div class="summary-box">
+                <ul class="list-group list-group-flush">
+                    <!-- Subtotal -->
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Subtotal</span>
+                        <span>$200.00</span>
+                    </li>
+
+                    <!-- Discount Code -->
+                    <li class="list-group-item mb-4">
+                        <label for="discount-code" class="form-label">Enter Discount Code</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="discount-code" placeholder="FLAT50">
+                            <button class="btn btn-dark">Apply</button>
+                        </div>
+                    </li>                    
+
+                    <!-- Delivery Charge -->
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Delivery Charge</span>
+                        <span>$5.00</span>
+                    </li>
+
+                    <!-- Grand Total -->
+                    <li class="list-group-item d-flex justify-content-between fw-bold">
+                        <span>Grand Total</span>
+                        <span>$205.00</span>
+                    </li>
+                </ul>
+
+                <!-- Checkout Button -->
+
+                    <button class="btn btn-dark mt-3 w-100" data-bs-toggle="modal" data-bs-target="#orderSuccessModal">
+                        Place Order
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--  ==================================== Order Place Successfully Model =====================  -->
+
+<!-- Modal -->
+<div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content order-modal-content text-center">
+      <div class="modal-body order-modal-body">
+       <!-- Icon -->
+        <div class="order-icon-container mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bag-fill order-icon" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 0-2 2v1H3.5A1.5 1.5 0 0 0 2 5.5v9A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 4H10V3a2 2 0 0 0-2-2zm3 3H5V3a3 3 0 0 1 6 0v1z"/>
+          </svg>
+        </div>
+        <!-- Title -->
+        <h5 class="modal-title mb-3 order-modal-title" id="orderSuccessModalLabel">Order Place Successfully</h5>
+        <!-- Message -->
+        <p class="text-muted order-modal-text">Thanks for shopping! Your order hasn’t shipped yet, but we will send you an email when it’s done.</p>
+        <!-- Buttons -->
+        <div class="d-grid gap-2">
+          <button class="btn btn-dark order-btn" type="button">View Order</button>
+          <button class="btn btn-outline-dark order-back-btn" type="button" data-bs-dismiss="modal">Back to Home</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--  ==================================== Order Place Successfully Model =====================  -->
+
+  <!-- ====================================== start footer ======================================== -->
+<footer class="py-2 py-md-4 py-lg-4 bg-dark text-white mt-5">
+    <div class="container-fluid">
+      <div class="row gy-3 gy-md-5 gy-lg-5 d-flex justify-content-between align-content-center">
+        <div class="col-12 col-md-4 col-lg-3">
+         <div class="logo_footer mb-4 mx-2">
+          <a href="" class="navbar-brand">
+            logo
+          </a>
+         </div>
+
+         <div class="dir_footer">
+          <div class="text-white">
+            <a href="" class="text-white mx-2 text-decoration-none"><i class="fas fa-phone-volume mx-2 "></i>+201094564718</a>
+          </div>
+          <div class="text-white mt-3">
+            <a href="" class="text-white mx-2 text-decoration-none"><i class="fas fa-envelope mx-2 "></i>krist@example.com</a>
+          </div>
+          <div class="text-white mt-3 ">
+            <a href="" class="text-white mx-2 text-decoration-none">
+              <i class="fas fa-map-marker-alt mx-2 "></i>
+              address</a>
+          </div>
+         </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <h5>Information</h5>
+          <ul class="list-unstyled">
+            <li class="mt-3">
+              <a href="#" class="text-white  text-decoration-none">My Account</a>
+            </li> 
+
+            <li class="mt-3">
+              <a href="#" class="text-white  text-decoration-none">Login</a>
+            </li>
+            <li class="mt-3">
+              <a href="#" class="text-white  text-decoration-none">My Cart</a>
+            </li >
+            <li class="mt-3">
+              <a href="#" class="text-white  text-decoration-none">Checkout</a>
+            </li>
+
+            <li class="mt-3">
+              <a href="#" class="text-white  text-decoration-none">My Wishlist</a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <h5>Service</h5>
+          <ul class="list-unstyled">
+            <li class="mt-3">
+              <a href="#" class="text-white  text-decoration-none">About Us</a>
+            </li> 
+
+            <li class="mt-3">
+              <a href="#" class="text-white  text-decoration-none">Careers</a>
+            </li>
+            <li class="mt-3">
+              <a href="#" class="text-white  text-decoration-none">Delivery Information</a>
+            </li >
+            <li class="mt-3">
+              <a href="#" class="text-white  text-decoration-none">Privacy Policy</a>
+            </li>
+            <li class="mt-3">
+              <a href="#" class="text-white  text-decoration-none">Terms & Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <h5>Subscribe</h5>
+          <div class="">
+            <p class="text-white">
+              Enter your email below to be the first to know about new <br>
+              collections and product launches.
+            </p>
+          </div>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <button type="submit" class="btn btn-light w-100">Subscribe</button>
+          </form>
+        </div>
+
+        <hr class="bg-dark">
+
+        <div class="row mt-3">
+          <div class="col-12 col-md-4 d-flex align-items-center justify-content-start">
+            <div class="footer-bank-card">
+              <a href="#" class="text-white me-2"><i class="fab fa-cc-visa fa-2x"></i></a>
+              <a href="#" class="text-white me-2"><i class="fas fa-credit-card fa-2x"></i></a>
+              <a href="#" class="text-white me-2"><i class="fab fa-cc-mastercard fa-2x"></i></a>
+              <a href="#" class="text-white me-2"><i class="fab fa-cc-paypal fa-2x"></i></a>
+            </div>
+          </div>
+        
+          <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+            <p class="fs-6">&copy; 2024 Developed by Eng.Mohamed Fadl</p>
+          </div>
+        
+          <div class="col-12 col-md-4 d-flex align-items-center justify-content-end">
+            <a href="" class="text-white mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="" class="text-white mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="" class="text-white mx-2 fs-5"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+  </footer>
+    
+    <!-- ========================================= popper js ==================================== -->
+    <script src="../assets/popper/popper.min.js"></script>
+
+    <!-- ========================================= bootstrap js ================================= -->
+    <script src="../assets/bootstrap5/js/bootstrap.min.js"></script>
+
+    <!-- ========================================= OwlCarousel2-2.3.4 =========================== -->
+    <script src="../assets/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+
+    <!-- ========================================= wow js ======================================= -->
+    <script src="../assets/wow/wow.min.js"></script>
+
+    <!-- ========================================= main js ===================================== -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- ===================================== fontawesome =============================== -->
+    <script src="../assets/fontawesome/js/all.min.js"></script>
+  </body>
+</html>
