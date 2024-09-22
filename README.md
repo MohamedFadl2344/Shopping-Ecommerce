@@ -20,12 +20,6 @@ Here are some screenshots of the website:
 ### Home Page
 ![Home Page](./screenshots/homepage.png)
 
-### Product Listing
-![Product Listing](./screenshots/product-listing.png)
-
-### Cart Page
-![Cart Page](./screenshots/cart-page.png)
-
 ### Checkout Page
 ![Checkout Page](./screenshots/checkout-page.png)
 
